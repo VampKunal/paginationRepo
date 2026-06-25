@@ -6,7 +6,7 @@ import { Label } from "./components/ui/label"
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "./components/ui/select"
 import { Dialog, DialogContent, DialogHeader, DialogTitle, DialogTrigger } from "./components/ui/dialog"
 
-const API_URL = "http://localhost:5000/products"
+const API_URL = import.meta.env.VITE_API_URL || "http://localhost:5000/products"
 const CATEGORIES = ["Electronics", "Books", "Clothing", "Sports", "Home"]
 
 export default function App() {
